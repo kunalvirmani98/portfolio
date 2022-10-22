@@ -5,8 +5,8 @@ export const projects = [
     image: '/images/portfolio.png',
     tags: ['Styled-components', 'React', 'Next'],
     source: 'https://google.com',
-    //visit: 'https://github.com/kunalvirmani98/portfolio',
-    visit: 'https://google.com',
+    visit: 'https://github.com/kunalvirmani98/portfolio',
+	  // visit: 'https://google.com',
     id: 0,
   },
   {
@@ -15,8 +15,8 @@ export const projects = [
     image: '/images/pets.jpg',
     tags: ['React', 'JavaScript'],
     source: 'https://google.com',
-    //visit: 'https://github.com/kunalvirmani98/adopt-me',
-    visit: 'https://google.com',
+    visit: 'https://github.com/kunalvirmani98/adopt-me',
+	  // visit: 'https://google.com',
     id: 1,
   },
   {
@@ -25,8 +25,8 @@ export const projects = [
     image: '/images/quiz.jpg',
     tags: ['React', 'JavaScript'],
     source: 'https://google.com',
-    //visit: 'https://github.com/kunalvirmani98/quizzo',
-    visit: 'https://google.com',
+    visit: 'https://github.com/kunalvirmani98/quizzo',
+	// visit: 'https://google.com',
     id: 2,
   },
   {
@@ -46,5 +46,5 @@ export const TimeLineData = [
   { year: 2020, text: 'Graduated with a CGPA 8/10', },
   { year: 2020, text: 'Worked as an intern in Antares Tech, Noida', },
   { year: 2020, text: 'Joined Ericsson India Pvt Ltd as a software developer', },
-  { year: 2021, text: 'Completed my first year in professional world and in Ericsson', },
+  { year: 2022, text: 'Joined Antares Tech Noida as an associate designer in Feb 2022', },
 ];
