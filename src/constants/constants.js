@@ -6,7 +6,7 @@ export const projects = [
     tags: ['Styled-components', 'React', 'Next'],
     source: 'https://google.com',
     visit: 'https://github.com/kunalvirmani98/portfolio',
-	  // visit: 'https://google.com',
+    // visit: 'https://google.com',
     id: 0,
   },
   {
@@ -16,7 +16,7 @@ export const projects = [
     tags: ['React', 'JavaScript'],
     source: 'https://google.com',
     visit: 'https://github.com/kunalvirmani98/adopt-me',
-	  // visit: 'https://google.com',
+    // visit: 'https://google.com',
     id: 1,
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
     tags: ['React', 'JavaScript'],
     source: 'https://google.com',
     visit: 'https://github.com/kunalvirmani98/quizzo',
-	// visit: 'https://google.com',
+    // visit: 'https://google.com',
     id: 2,
   },
   {
@@ -47,4 +47,5 @@ export const TimeLineData = [
   { year: 2020, text: 'Worked as an intern in Antares Tech, Noida', },
   { year: 2020, text: 'Joined Ericsson India Pvt Ltd as a software developer', },
   { year: 2022, text: 'Joined Antares Tech Noida as an associate designer in Feb 2022', },
+  { year: 2022, text: 'Joined RateGain Travel Technologies as SDE-1 in Dec 2022', },
 ];
