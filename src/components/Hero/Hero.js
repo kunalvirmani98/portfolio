@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { LeftSection, RightSection, StyledImage } from './HeroStyles';
 
 const Hero = (props) => (
-  <Section row nopadding>
+  <Section row nopadding style={{ margin: '0px !important' }}>
     <LeftSection>
       <SectionTitle main center>
         Welcome to <br />
@@ -19,6 +20,11 @@ const Hero = (props) => (
         Learn More
       </Button>
     </LeftSection>
+    <RightSection>
+      {/* TO BE CONTINUED */}
+      {/* <StyledImage src="/images/blob-dp.svg" /> */}
+      {/* <StyledImage src="/images/kunal_virmani_cropped.png" alt='kunal' /> */}
+    </RightSection>
   </Section>
 );
 
