@@ -5,7 +5,7 @@ export const LeftSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;
     display: flex;
@@ -71,3 +71,32 @@ export const StyledImage2 = styled.img`
   width: ${props => props.width || 'auto'};
   height: ${props => props.height || 'auto'};
 `;
+
+export const Div3 = styled.div`
+  grid-area: 1 / 5 / 2 / 6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    align-items: center;
+    grid-area: 1 / 4 / 2 / 6;
+  }
+`;
+
+// Social Icons 
+
+export const SocialIcons = styled.a`
+  transition: 0.3s ease;
+  color: #3D52A0;
+  border-radius: 50px;
+  padding: 8px 8px 4px 8px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  &:hover {
+      background-color: #212d45;
+      color: white;
+      transform: scale(1.2);
+      cursor: pointer;
+      
+    }
+`

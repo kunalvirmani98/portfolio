@@ -32,21 +32,11 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: 1 / 2 / 2 / 6;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
-  }
-`;
-export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
   }
 `;
 
@@ -55,9 +45,11 @@ export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
   color: #3D52A0;
-  transition: 0.4s ease;
+  transition: 0.2s ease;
+  margin-right: 32px;
   &:hover {
-    color: #fff;
+    // color: #7091E6;
+    font-weight:500;
     opacity: 1;
     cursor: pointer;
   }
@@ -112,19 +104,17 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   }
 `;
 
-
-// Social Icons 
-
 export const SocialIcons = styled.a`
-transition: 0.3s ease;
-color: #3D52A0;
-border-radius: 50px;
-  padding: 8px;
-&:hover {
-    background-color: #212d45;
-    color: white;
-    transform: scale(1.2);
-    cursor: pointer;
-    
-  }
+  transition: 0.3s ease;
+  color: #3D52A0;
+  border-radius: 50px;
+    padding: 8px;
+  &:hover {
+      background-color: #212d45;
+      color: white;
+      transform: scale(1.2);
+      cursor: pointer;
+      
+    }
 `
+
