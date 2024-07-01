@@ -1,4 +1,15 @@
-import styled from 'styled-components'
+import styled, { keyframes, css } from 'styled-components';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const ImageContainer = styled.div`
   text-align: center;
@@ -147,4 +158,14 @@ export const SkillIcon = styled.img`
   height: 100px;
   margin-right: 64px;
   margin-bottom: 32px;
+  transition: 0.2s all;
+  opacity: 0;
+
+  ${({ isVisible }) => isVisible && css`
+    animation: ${fadeIn} 1s ease-in-out forwards;
+  `}
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
