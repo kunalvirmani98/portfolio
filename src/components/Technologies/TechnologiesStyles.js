@@ -65,7 +65,7 @@ export const ListTitle = styled.h4`
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  // color: #FFFFFF;
   margin-bottom: 8px;
 
 @media ${props => props.theme.breakpoints.md}{
@@ -131,3 +131,20 @@ export const ListIcon = styled.img`
     margin-bottom: 0px;
   }
 `
+
+export const CenteredDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+`;
+
+export const SkillIcon = styled.img`
+  background: ${props => props.background || '#fff'};
+  border-radius: 50%;
+  padding: 12px;
+  width: 100px;
+  height: 100px;
+  margin-right: 64px;
+  margin-bottom: 32px;
+`;

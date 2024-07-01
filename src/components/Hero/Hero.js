@@ -21,10 +21,10 @@ const Hero = (props) => {
           Front-end Developer
         </SectionTitle>
         <SectionText>
-          Transforming Designs into Engaging Web Experiences using HTML5, CSS3, Javascript, Tyescript
+          {/* Transforming Designs into Engaging Web Experiences using HTML5, CSS3, Javascript, Tyescript
+          React, Next, Angular */}
+          I design and develop experiences that make people's lives simpler through web apps. I work with Figma, HTML5, CSS3, Javascript,
           React, Next, Angular
-          {/* I design and develop experiences that make people's lives simpler through web apps. I work with Figma, HTML5, CSS3, Javascript,
-          React, ReactNative and Flutter. */}
         </SectionText>
         <Div3>
           <SocialIcons href="https://github.com/kunalvirmani98">

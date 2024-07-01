@@ -8,9 +8,9 @@ const Projects = () => {
   const isVisible = useInView({ threshold: 0.1 });
 
   return (
-    <Section nopadding id="projects">
-      <SectionDivider />
+    <Section id="projects">
       <SectionTitle main>Projects</SectionTitle>
+      <SectionDivider />
       <GridContainer>
         {
           projects.map(({ title, description, image, tags, visit, id }) => (

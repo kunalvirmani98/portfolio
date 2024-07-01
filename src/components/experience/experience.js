@@ -3,9 +3,9 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 
 export default function Experience() {
     return (
-        <Section nopadding>
-            <SectionDivider />
+        <Section>
             <SectionTitle>Experience</SectionTitle>
+            <SectionDivider />
         </Section>
     )
 }

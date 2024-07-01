@@ -1,8 +1,10 @@
 export default {
   // Temp fonts
   fonts: {
-    title: "Space Grotesk, sans-serif",
-    main: "Space Grotesk, sans-serif"
+    // title: "Space Grotesk, sans-serif",
+    // main: "Space Grotesk, sans-serif",
+    title: "DM Sans, sans-serif",
+    main: "DM Sans, sans-serif"
   },
   // Colors for layout
   // colors: {
@@ -13,7 +15,7 @@ export default {
   //   background2: "hsl(232.7,27.3%,23.7%)",
   // },
   colors: {
-    primary1: "8697C4",
+    primary1: "#021e88",
     background1: "#EDE8F5",
     accent1: "#ADBBDA",
     button: "#3D52A0",
