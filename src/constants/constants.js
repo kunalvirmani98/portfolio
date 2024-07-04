@@ -87,14 +87,14 @@ export const timelineElements = [
     location: "Thapar University, Patiala",
     description:
       "I graduated from university in June 2020, earning a Bachelor of Engineering in Computer Engineering with a CGPA of 8.0 out of 10.",
-    buttonText: "Course Certificate",
+    // buttonText: "Course Certificate",
     date: "Aug 2016 - June 2020",
     icon: "school",
   },
   {
     id: 5,
-    title: "S.S.D.P.S",
-    location: "Jalandhar, Punjab",
+    title: "Senior Secondary",
+    location: "S.S.D.P.S, Jalandhar",
     description:
       "I completed my Class 12 education with a percentage of 88.6%, with main subjects being Physics, Chemistry, and Mathematics.",
     // buttonText: "College Projects",

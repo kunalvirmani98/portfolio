@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { MdWavingHand } from 'react-icons/md';
+// import { PiHandWaving } from 'react-icons/pi';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { TypeAnimation } from 'react-type-animation';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection, RightSection, MaskedImage, StyledImage, Div3, SocialIcons } from './HeroStyles';
 
@@ -15,11 +16,23 @@ const Hero = (props) => {
     <Section row nopadding style={{ margin: '0px !important' }}>
       <LeftSection>
         <StyledImage src='/images/kunal_virmani.jpeg' />
-        <SectionTitle main center>
-          Hi {/*<MdWavingHand size="3rem" />*/},<br />
-          I'm Kunal, <br />
-          Front-end Developer
+        <SectionTitle main center style={{ marginBottom: '0px' }}>
+          Hi , I'm
         </SectionTitle>
+        <TypeAnimation
+          sequence={[
+            'Kunal',
+            1000,
+            'A Frontend Developer',
+            1000,
+            'A Tech Enthusiast',
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{ fontSize: '65px', display: 'inline-block', marginBottom: '32px' }}
+          repeat={Infinity}
+        />
         <SectionText>
           {/* Transforming Designs into Engaging Web Experiences using HTML5, CSS3, Javascript, Tyescript
           React, Next, Angular */}
