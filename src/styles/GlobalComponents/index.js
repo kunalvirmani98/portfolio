@@ -27,6 +27,7 @@ export const Section = styled.section`
 export const SectionTitle = styled.h2`
   font-weight: 800;
   // color: #3D52A0;
+  margin: 0 auto;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
@@ -63,6 +64,8 @@ export const SectionText = styled.p`
   font-weight: 300;
   padding-bottom: 3.6rem;
   color: #3D52A0;
+  text-align: center;
+  text-wrap: balance;
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -79,7 +82,7 @@ export const SectionText = styled.p`
 `
 
 export const SectionDivider = styled.div`
-
+  display: none;
   width: 64px;
   height: 6px;
   border-radius: 10px;

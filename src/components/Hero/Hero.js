@@ -23,9 +23,9 @@ const Hero = (props) => {
           sequence={[
             'Kunal',
             1000,
-            'A Frontend Developer',
+            'Frontend Developer',
             1000,
-            'A Tech Enthusiast',
+            'Tech Enthusiast',
             1000,
           ]}
           wrapper="span"

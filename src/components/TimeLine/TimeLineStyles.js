@@ -152,3 +152,18 @@ export const CarouselButtonDot = styled.div`
   width: 3px;
   height: 3px;
 `
+
+export const ExperienceListItem = styled.li`
+  list-style: disc;
+  font-size: 13px;
+  margin-bottom: 5px;
+  line-height: 1.4;
+
+  &:first-child {
+    margin-top: 4px;
+  }
+`
+
+export const ExperienceList = styled.ul`
+  padding-left: 14px;
+`

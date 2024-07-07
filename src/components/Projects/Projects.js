@@ -5,7 +5,7 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { projects } from '../../constants/constants';
 
 const Projects = () => {
-  const isVisible = useInView({ threshold: 0.1 });
+  const isVisible = useInView({ threshold: 0.1, elementId: 'projects' });
 
   return (
     <Section id="projects">
@@ -14,7 +14,7 @@ const Projects = () => {
       <GridContainer>
         {
           projects.map(({ title, description, image, tags, visit, id }) => (
-            <BlogCard key={id} className='animatedElement' isVisible={isVisible}>
+            <BlogCard key={id} isVisible={isVisible}>
               <Img src={image} />
               <TitleContent>
                 <HeaderThree title>{title}</HeaderThree>

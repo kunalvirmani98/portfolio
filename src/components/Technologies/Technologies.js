@@ -1,32 +1,32 @@
 import React from 'react';
 import useInView from '../../hooks/useInView';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { CenteredDiv, SkillIcon } from './TechnologiesStyles';
+import { CenteredDiv, SkillIcon, SkillIconContainer } from './TechnologiesStyles';
+
+import { skills } from '../../constants/constants';
 
 const Technologies = () => {
-  const isVisible = useInView({ threshold: 0.0 });
+  const isVisible = useInView({ threshold: 0.0, elementId: 'tech' });
 
   return (
     <Section id="tech">
       <SectionTitle>Skills</SectionTitle>
       <SectionDivider />
       <SectionText>
-        I've worked with a range of Technologies in the world of web development
-        from back-end to frontend
+        Although I have experience with a range of technologies from frontend to backend, my core expertise is in frontend development, and my skills include:
       </SectionText>
       <CenteredDiv>
-        <SkillIcon isVisible={isVisible} src="/images/html.png" />
-        <SkillIcon isVisible={isVisible} src="/images/css.png" />
-        <SkillIcon isVisible={isVisible} src="/images/react.png" />
-        <SkillIcon isVisible={isVisible} src="/images/redux.png" />
-        <SkillIcon isVisible={isVisible} src="/images/node.png" />
-        <SkillIcon isVisible={isVisible} src="/images/sass.png" />
-        <SkillIcon isVisible={isVisible} src="/images/figma.png" />
-        <SkillIcon isVisible={isVisible} src="/images/typescript.png" />
-        <SkillIcon isVisible={isVisible} src="/images/git.png" />
-        <SkillIcon isVisible={isVisible} src="/images/mu5.png" />
-        <SkillIcon isVisible={isVisible} src="/images/python.png" />
-        <SkillIcon isVisible={isVisible} src="/images/api.png" />
+        {
+          skills.map((skill) => {
+            return (
+              <SkillIconContainer key={skill.skill_name} isVisible={isVisible}>
+                <SkillIcon src={skill.img_src} alt="skill_image" />
+                <div className='name'>{skill.skill_name}</div>
+                <div className='description'>{skill.description}</div>
+              </SkillIconContainer>
+            )
+          })
+        }
       </CenteredDiv>
       {/* <List>
       <ListItem>

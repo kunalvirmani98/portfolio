@@ -1,13 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { ExperienceList, ExperienceListItem } from './TimeLineStyles';
 import { timelineElements } from '../../constants/constants';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
 import "react-vertical-timeline-component/style.min.css";
+import Experience from '../experience/experience';
 
 const Timeline = () => {
   let workIconStyles = { background: "#06D6A0", display: "flex", justifyContent: "center", alignItems: "center" };
@@ -39,7 +40,10 @@ const Timeline = () => {
               <h5 className="vertical-timeline-element-subtitle">
                 {element.location}
               </h5>
-              <p id="description">{element.description}</p>
+              <ExperienceList id="key-highlights">
+                {element.key_highlights?.map((highlight, index) => <ExperienceListItem key={element.index + "" + index}>{highlight}</ExperienceListItem>)}
+              </ExperienceList>
+              {/* <p id="description">{element.description}</p> */}
               {showButton && (
                 <a
                   className={`button ${isWorkIcon ? "workButton" : "schoolButton"

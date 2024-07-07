@@ -148,6 +148,7 @@ export const CenteredDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 32px;
 `;
 
 export const SkillIcon = styled.img`
@@ -156,16 +157,27 @@ export const SkillIcon = styled.img`
   padding: 12px;
   width: 100px;
   height: 100px;
-  margin-right: 64px;
-  margin-bottom: 32px;
-  transition: 0.2s all;
+`;
+
+export const SkillIconContainer = styled.div`
   opacity: 0;
+  max-width: 110px;
+
+  .name {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 8px;
+  }
+
+  .description {
+    font-size: 13px;
+    text-wrap: balance;
+    text-align: center;
+  }
 
   ${({ isVisible }) => isVisible && css`
     animation: ${fadeIn} 1s ease-in-out forwards;
   `}
-
-  &:hover {
-    transform: scale(1.2);
-  }
 `;

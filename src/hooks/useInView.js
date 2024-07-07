@@ -1,8 +1,9 @@
 // hooks/useInView.js
 import { useState, useEffect } from 'react';
 
-const useInView = (options) => {
+const useInView = (props) => {
     const [isIntersecting, setIsIntersecting] = useState(false);
+    let { elementId, ...options } = props;
 
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
@@ -16,7 +17,7 @@ const useInView = (options) => {
 
     useEffect(() => {
         const observer = new IntersectionObserver(observerCallback, options);
-        const element = document.querySelector('.animatedElement');
+        const element = document.getElementById(elementId);
         if (element) {
             observer.observe(element);
         }

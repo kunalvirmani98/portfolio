@@ -31,8 +31,8 @@ row-gap: 3rem;
   padding: 2rem;
   padding-bottom: 0;
 }
-
 `
+
 export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
@@ -42,6 +42,8 @@ export const BlogCard = styled.div`
   
   ${({ isVisible }) => isVisible && css`
     animation: ${fadeIn} 1s ease-in-out forwards;
+    backdrop-filter: blur(20px);
+    background: rgba(0,0,0,0.1);
   `}
 
   @media ${(props) => props.theme.breakpoints.sm} {
