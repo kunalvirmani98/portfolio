@@ -10,7 +10,6 @@ const Projects = () => {
   return (
     <Section id="projects">
       <SectionTitle main>Projects</SectionTitle>
-      <SectionDivider />
       <GridContainer>
         {
           projects.map(({ title, description, image, tags, visit, id }) => (
@@ -21,7 +20,7 @@ const Projects = () => {
                 <Hr />
               </TitleContent>
               <CardInfo>{description}</CardInfo>
-              <div>
+              {/* <div>
                 <TitleContent>Stack</TitleContent>
                 <TagList>
                   {
@@ -30,9 +29,9 @@ const Projects = () => {
                     ))
                   }
                 </TagList>
-              </div>
+              </div> */}
               <UtilityList>
-                <ExternalLinks href={visit}>Code</ExternalLinks>
+                {/* <ExternalLinks href={visit}>Code</ExternalLinks> */}
               </UtilityList>
             </BlogCard>
           ))

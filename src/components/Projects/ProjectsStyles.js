@@ -13,7 +13,7 @@ const fadeIn = keyframes`
 
 export const Img = styled.img`
   width:100%;
-  height:100%;
+  height:200px;
   object-fit: cover;
   overflow: hidden;
 `
@@ -39,11 +39,11 @@ export const BlogCard = styled.div`
   text-align: center;
   width: 400px;
   opacity: 0;
+  background: white;
+  padding: 20px;
   
   ${({ isVisible }) => isVisible && css`
     animation: ${fadeIn} 1s ease-in-out forwards;
-    backdrop-filter: blur(20px);
-    background: rgba(0,0,0,0.1);
   `}
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -89,7 +89,7 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
-  color: #e4e6e7;
+  color: #9b81c5;
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;

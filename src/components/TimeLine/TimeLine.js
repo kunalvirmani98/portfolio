@@ -15,9 +15,8 @@ const Timeline = () => {
   let schoolIconStyles = { background: "#f9c74f", display: "flex", justifyContent: "center", alignItems: "center" };
 
   return (
-    <Section nopadding id="experience">
-      <SectionDivider />
-      <SectionTitle>Experience</SectionTitle>
+    <Section id="experience" main>
+      <SectionTitle main>Experience</SectionTitle>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";

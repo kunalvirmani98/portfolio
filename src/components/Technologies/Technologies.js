@@ -10,8 +10,7 @@ const Technologies = () => {
 
   return (
     <Section id="tech">
-      <SectionTitle>Skills</SectionTitle>
-      <SectionDivider />
+      <SectionTitle main>Skills</SectionTitle>
       <SectionText>
         Although I have experience with a range of technologies from frontend to backend, my core expertise is in frontend development, and my skills include:
       </SectionText>
